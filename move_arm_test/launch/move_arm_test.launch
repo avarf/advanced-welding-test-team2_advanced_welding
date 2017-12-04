@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 <launch>
 	<node pkg="move_arm_test" type="move_arm_test_node" name="move_arm_test" output="screen">
 	</node>
 </launch>
+=======
+<launch>
+	<node pkg="move_arm_test" type="move_arm_test_node" name="move_arm_test" output="screen">
+	</node>
+</launch>
+>>>>>>> 99c9916546883a1709fd03273f561db61b2cf325

@@ -7,11 +7,32 @@ Implementing a cartesian controller for a robot manipulator
 *   Peerawad Boonyarittiwong - [@azsembler](https://github.com/azsembler)
 *   Mohammadali Varfan- [@avarf](https://github.com/avarf)
 
+## Travis setup:
+To setup, perform the following steps:
+
+-   Sign up for [travis-ci.org](https://travis-ci.org/) and enable CI for the repository
+-   Create a .travis.yml file in your local repository.
+-   Populate the file as described [here](https://github.com/felixduvallet/ros-travis-integration/blob/master/.travis.yml). 
+-   The above file sets up continuous integration (through Travis-CI) for any ROS package. For more information refer [this link](https://github.com/felixduvallet/ros-travis-integration)
+-   Commit the file and push it to github.
+
+Now for every push , travis does the following:
+
+-   A barebones ROS distribution (indigo by default) is installed on a fresh ubuntu virtual machine.
+-   A catkin workspace is created and your repository is put in it.
+-   The wstool is used to check out any from-source dependencies (i.e. other repositories).
+-   Resolves package dependencies using rosdep (i.e. install packages using apt-get).
+-   Compiles the catkin workspace
+-   Runs all available unit tests
+
+Including the above, more information can be found at [this link](https://answers.ros.org/question/220305/how-can-i-integrate-my-ros-package-with-travis-continuous-integration/)
+
+Successful travis build status can be seen at this link : [![Build Status](https://travis-ci.org/Ravikiran-Bhat-Git/advanced-welding-test-team2_advanced_welding.svg?branch=develop)](https://travis-ci.org/Ravikiran-Bhat-Git/advanced-welding-test-team2_advanced_welding)
 
 ## Known Issues / Todo's
 
 -   Creating a node for working with the arm
--   Start using Travis
+
 
 ## Introduction
 The goal of this project is the implementation of a catesian controller that can control a manipulator smoothly and pass the welding task of the robocup competition.

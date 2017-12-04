@@ -1,13 +1,24 @@
 <?xml version="1.0"?>
+<<<<<<< HEAD
 <package format="2">
+=======
+<package>
+>>>>>>> 99c9916546883a1709fd03273f561db61b2cf325
   <name>move_arm_test</name>
   <version>0.0.0</version>
   <description>The move_arm_test package</description>
 
+<<<<<<< HEAD
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
   <maintainer email="a@todo.todo">a</maintainer>
+=======
+  <!-- One maintainer tag required, multiple allowed, one person per tag --> 
+  <!-- Example:  -->
+  <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
+  <maintainer email="ravikiran@todo.todo">ravikiran</maintainer>
+>>>>>>> 99c9916546883a1709fd03273f561db61b2cf325
 
 
   <!-- One license tag required, multiple allowed, one license per tag -->
@@ -28,6 +39,7 @@
   <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
 
 
+<<<<<<< HEAD
   <!-- The *depend tags are used to specify dependencies -->
   <!-- Dependencies can be catkin packages or system dependencies -->
   <!-- Examples: -->
@@ -48,12 +60,26 @@
   <!--   <test_depend>gtest</test_depend> -->
   <!-- Use doc_depend for packages you need only for building documentation: -->
   <!--   <doc_depend>doxygen</doc_depend> -->
+=======
+  <!-- The *_depend tags are used to specify dependencies -->
+  <!-- Dependencies can be catkin packages or system dependencies -->
+  <!-- Examples: -->
+  <!-- Use build_depend for packages you need at compile time: -->
+  <!--   <build_depend>message_generation</build_depend> -->
+  <!-- Use buildtool_depend for build tool packages: -->
+  <!--   <buildtool_depend>catkin</buildtool_depend> -->
+  <!-- Use run_depend for packages you need at runtime: -->
+  <!--   <run_depend>message_runtime</run_depend> -->
+  <!-- Use test_depend for packages you need only for testing: -->
+  <!--   <test_depend>gtest</test_depend> -->
+>>>>>>> 99c9916546883a1709fd03273f561db61b2cf325
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>geometry_msgs</build_depend>
   <build_depend>kdl_parser</build_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>rospy</build_depend>
   <build_depend>std_msgs</build_depend>
+<<<<<<< HEAD
   <build_export_depend>geometry_msgs</build_export_depend>
   <build_export_depend>kdl_parser</build_export_depend>
   <build_export_depend>roscpp</build_export_depend>
@@ -64,6 +90,13 @@
   <exec_depend>roscpp</exec_depend>
   <exec_depend>rospy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
+=======
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>kdl_parser</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+>>>>>>> 99c9916546883a1709fd03273f561db61b2cf325
 
 
   <!-- The export tag contains other, unspecified, tags -->

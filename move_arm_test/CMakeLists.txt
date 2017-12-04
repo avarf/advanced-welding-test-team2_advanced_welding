@@ -1,8 +1,13 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(move_arm_test)
 
+<<<<<<< HEAD
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
+=======
+## Add support for C++11, supported in ROS Kinetic and newer
+# add_definitions(-std=c++11)
+>>>>>>> 99c9916546883a1709fd03273f561db61b2cf325
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -100,7 +105,11 @@ find_package(catkin REQUIRED COMPONENTS
 ###################################
 ## The catkin_package macro generates cmake config files for your package
 ## Declare things to be passed to dependent projects
+<<<<<<< HEAD
 ## INCLUDE_DIRS: uncomment this if your package contains header files
+=======
+## INCLUDE_DIRS: uncomment this if you package contains header files
+>>>>>>> 99c9916546883a1709fd03273f561db61b2cf325
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
@@ -117,8 +126,13 @@ catkin_package(
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
+<<<<<<< HEAD
 include_directories(
 # include
+=======
+# include_directories(include)
+include_directories(
+>>>>>>> 99c9916546883a1709fd03273f561db61b2cf325
   ${catkin_INCLUDE_DIRS}
 )
 
@@ -150,7 +164,11 @@ add_executable(${PROJECT_NAME}_node src/move_arm_test.cpp)
 ## Specify libraries to link a library or executable target against
 target_link_libraries(${PROJECT_NAME}_node
    ${catkin_LIBRARIES}
+<<<<<<< HEAD
 )
+=======
+ )
+>>>>>>> 99c9916546883a1709fd03273f561db61b2cf325
 
 #############
 ## Install ##
